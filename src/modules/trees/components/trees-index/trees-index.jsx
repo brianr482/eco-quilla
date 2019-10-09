@@ -2,19 +2,20 @@ import {
   Box,
   Card,
   Typography,
-  CardActions,
   CardContent,
-  Button,
+  
   Table,
   TableCell,
   TableBody,
   TableHead,
   TableRow,
+  IconButton,
 } from '@material-ui/core';
+import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import React from 'react';
-import './trees-index.scss';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import ReactRouterPropTypes from 'react-router-prop-types';
+import styles from './trees-index.module.scss';
 
 const dummyRows = [
   {
@@ -27,13 +28,28 @@ const dummyRows = [
 
 function TreesIndex({ history, location }) {
   return (
-    <Box className="wrapper">
-      <Card className="card">
+    <Box className={styles.wrapper}>
+      <Card className={styles.card}>
         <CardContent>
-          <Typography variant="h5">
-            Lista de árboles
-          </Typography>
-          <Table className="main-table">
+          <Box
+            display="flex"
+            flexDirection="row"
+            alignItems="center"
+          >
+            <Box mr={0.5}>
+              <IconButton
+                aria-label="delete"
+                component={Link}
+                to="/"
+              >
+                <KeyboardArrowLeftIcon fontSize="small" />
+              </IconButton>
+            </Box>
+            <Typography variant="h5">
+              Lista de árboles
+            </Typography>
+          </Box>
+          <Table className={styles['main-table']}>
             <TableHead>
               <TableRow>
                 <TableCell>Nombre</TableCell>
@@ -65,9 +81,6 @@ function TreesIndex({ history, location }) {
             </TableBody>
           </Table>
         </CardContent>
-        <CardActions>
-          <Button size="small">Regresar</Button>
-        </CardActions>
       </Card>
     </Box>
   );

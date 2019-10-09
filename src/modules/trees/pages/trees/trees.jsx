@@ -2,13 +2,13 @@ import {
   Box,
 } from '@material-ui/core';
 import React from 'react';
-import './trees.scss';
+import { Route } from 'react-router-dom';
+import styles from './trees.module.scss';
 import TreesIndex from '../../components/trees-index/trees-index';
-import { Route } from "react-router-dom";
 
 function Trees() {
   return (
-    <Box className="wrapper">
+    <Box className={styles.wrapper}>
       <Route path="/" component={TreesIndex} />
     </Box>
   );
