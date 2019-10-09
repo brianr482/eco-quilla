@@ -15,6 +15,9 @@ function handleScan(result) {
   // TODO: Remove log
   // eslint-disable-next-line no-console
   console.log(`Result of qr => ${result}`);
+  if (result != null) {
+    window.location.href = result;
+  }
 }
 
 function handleError(error) {
