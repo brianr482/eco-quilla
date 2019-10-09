@@ -6,6 +6,7 @@ import {
 import { Search as SearchIcon } from '@material-ui/icons';
 import React from 'react';
 import './welcome.scss';
+import { Link } from 'react-router-dom';
 
 function Welcome() {
   return (
@@ -14,13 +15,18 @@ function Welcome() {
         <Typography variant="h1">
           Bienvenido a EcoQuilla
         </Typography>
-        <Fab variant="extended" aria-label="delete">
+        <Fab
+          variant="extended"
+          aria-label="delete"
+          component={Link}
+          to="/trees"
+        >
           Buscar árboles &nbsp;
           <SearchIcon />
         </Fab>
       </Box>
       <Box className="footer">
-        <Typography variant="span">
+        <Typography variant="body1">
           Cátedra Barranquilla 2019
         </Typography>
       </Box>

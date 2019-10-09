@@ -9,7 +9,7 @@ $textShadow: 0px 4px 3px rgba(0,0,0,0.4),
   -o-background-size:cover;
   background-size:cover;
   background-position:center;
-  background-image: url("../../assets/plaza_paz.jpg");
+  background-image: url("../../../../assets/plaza_paz.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +36,7 @@ $textShadow: 0px 4px 3px rgba(0,0,0,0.4),
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    span {
+    p {
       text-align: left;
       color: white;
       text-shadow: $textShadow;
