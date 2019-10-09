@@ -20,7 +20,7 @@ const dummyTree = {
             + 'lacinia pellentesque. Fusce vel rutrum sapien, non viverra'
             + 'arcu. Ut eu libero at augue porttitor malesuada quis sit amet'
             + 'libero.',
-  imgSrc: 'https://picsum.photos/seed/picsum/200/300',
+  imgSrc: 'https://picsum.photos/id/324/200/300',
 };
 
 function TreeDetail() {

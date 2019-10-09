@@ -9,8 +9,11 @@ import {
   TableHead,
   TableRow,
   IconButton,
+  Fab,
+  Tooltip,
 } from '@material-ui/core';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
+import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import ReactRouterPropTypes from 'react-router-prop-types';
@@ -81,6 +84,17 @@ function TreesIndex({ history, location }) {
           </Table>
         </CardContent>
       </Card>
+      <Tooltip title="Escanear QR" aria-label="go to qr reader">
+        <Fab
+          color="secondary"
+          aria-label="camera"
+          className={styles['camera-action-button']}
+          component={Link}
+          to={`${location.pathname}/search`}
+        >
+          <CameraAltIcon />
+        </Fab>
+      </Tooltip>
     </Box>
   );
 }
