@@ -11,24 +11,34 @@ import {
   IconButton,
   Fab,
   Tooltip,
+  CircularProgress,
+  TablePagination,
 } from '@material-ui/core';
+import { useCollectionData } from 'react-firebase-hooks/firestore';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import ReactRouterPropTypes from 'react-router-prop-types';
+import firebase from '../../../../firebase';
 import styles from './trees-index.module.scss';
 
-const dummyRows = [
-  {
-    name: 'Roble amarillo',
-    location: 'Zona sur',
-    age: '10 años',
-    publicCode: 'a4g2jfh',
-  },
-];
-
 function TreesIndex({ history, location }) {
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const [trees, loading] = useCollectionData(
+    firebase.firestore().collection('trees'),
+    {
+      snapshotListenOptions: { includeMetadataChanges: true },
+    },
+  );
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
+  };
   return (
     <Box className={styles.wrapper}>
       <Card className={styles.card}>
@@ -51,37 +61,69 @@ function TreesIndex({ history, location }) {
               Lista de árboles
             </Typography>
           </Box>
-          <Table className={styles['main-table']}>
-            <TableHead>
-              <TableRow>
-                <TableCell>Nombre</TableCell>
-                <TableCell>Ubicación</TableCell>
-                <TableCell>Edad</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {dummyRows.map((row) => (
-                <TableRow
-                  key={row.name}
-                  onClick={
-                    () => history.push(
-                      `${location.pathname}/${row.publicCode}`,
-                    )
-                  }
-                  hover
-                >
-                  <TableCell
-                    component="th"
-                    scope="row"
-                  >
-                    {row.name}
-                  </TableCell>
-                  <TableCell>{row.location}</TableCell>
-                  <TableCell>{row.age}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+          >
+            {loading
+            && (
+            <Box mt={1}>
+              <CircularProgress />
+            </Box>
+            )}
+            {trees
+            && (
+            <div>
+              <Table className={styles['main-table']}>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Nombre</TableCell>
+                    <TableCell>Especie</TableCell>
+                    <TableCell>Ubicación</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {trees.map((tree) => (
+                    <TableRow
+                      key={tree.name}
+                      onClick={
+                        () => history.push(
+                          `${location.pathname}/${tree.publicCode}`,
+                        )
+                      }
+                      hover
+                    >
+                      <TableCell
+                        component="th"
+                        scope="row"
+                      >
+                        {tree.name}
+                      </TableCell>
+                      <TableCell>{tree.species}</TableCell>
+                      <TableCell>{tree.zone}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+              <TablePagination
+                rowsPerPageOptions={[5, 10, 25]}
+                component="div"
+                count={trees.length}
+                rowsPerPage={rowsPerPage}
+                page={page}
+                backIconButtonProps={{
+                  'aria-label': 'Página anterior',
+                }}
+                nextIconButtonProps={{
+                  'aria-label': 'Siguiente página',
+                }}
+                onChangePage={handleChangePage}
+                onChangeRowsPerPage={handleChangeRowsPerPage}
+              />
+            </div>
+            )}
+          </Box>
         </CardContent>
       </Card>
       <Tooltip title="Escanear QR" aria-label="go to qr reader">
