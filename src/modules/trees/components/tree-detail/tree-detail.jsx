@@ -5,71 +5,151 @@ import {
   CardContent,
   CardMedia,
   IconButton,
+  CircularProgress,
+  Button,
 } from '@material-ui/core';
+import { useCollectionData } from 'react-firebase-hooks/firestore';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ReactRouterPropTypes from 'react-router-prop-types';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
+import SentimentVeryDissatisfiedIcon from
+  '@material-ui/icons/SentimentVeryDissatisfied';
+import firebase from '../../../../firebase';
 import styles from './tree-detail.module.scss';
 
-const dummyTree = {
-  name: 'Roble amarillo',
-  location: 'Zona sur',
-  age: '10 años',
-  publicCode: 'a4g2jfh',
-  description: 'Donec et molestie eros, eu ultrices elit. Quisque tempus'
-            + 'lacinia pellentesque. Fusce vel rutrum sapien, non viverra'
-            + 'arcu. Ut eu libero at augue porttitor malesuada quis sit amet'
-            + 'libero.',
-  imgSrc: 'https://picsum.photos/id/324/200/300',
-};
-
-function TreeDetail() {
+function TreeDetail({ match }) {
+  const [treesList, loading, error] = useCollectionData(
+    firebase.firestore().collection('trees')
+      .where('publicCode', '==', match.params.publicCode).limit(1),
+    {
+      snapshotListenOptions: { includeMetadataChanges: true },
+    },
+  );
+  const tree = (treesList && treesList[0]) || null;
   return (
     <Box className={styles.wrapper}>
       <Card className={styles.card}>
         <Box display="flex" flexDirection="column">
           <CardContent className={styles['card-content']}>
-            <Box
-              display="flex"
-              flexDirection="row"
-              alignItems="center"
-            >
-              <Box mr={0.5}>
-                <IconButton
-                  aria-label="delete"
-                  component={Link}
-                  to="/trees"
-                >
-                  <KeyboardArrowLeftIcon fontSize="small" />
-                </IconButton>
+            {loading
+            && (
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                height={1}
+              >
+                <CircularProgress />
               </Box>
-              <Typography variant="h5">
-                {dummyTree.name}
+            )}
+            {tree
+            && (
+            <div>
+              <Box
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+              >
+                <Box mr={0.5}>
+                  <IconButton
+                    aria-label="delete"
+                    component={Link}
+                    to="/trees"
+                  >
+                    <KeyboardArrowLeftIcon fontSize="small" />
+                  </IconButton>
+                </Box>
+                <Typography variant="h5">
+                  {tree.name}
+                </Typography>
+              </Box>
+              <Box mb={0.75}>
+                <Typography variant="subtitle2" color="textSecondary">
+                  {`${tree.species} |  ${tree.zone}`}
+                </Typography>
+              </Box>
+              <Typography
+                variant="body2"
+                align="justify"
+                color="textSecondary"
+                paragraph
+              >
+                <b>Descripción</b>
+                :&nbsp;
+                {tree.description}
               </Typography>
-            </Box>
-            <Box mb={0.75}>
-              <Typography variant="subtitle2" color="textSecondary">
-                {`${dummyTree.age} |  ${dummyTree.location}`}
+              <Typography
+                variant="body2"
+                align="justify"
+                color="textSecondary"
+                paragraph
+              >
+                <b>Familia</b>
+                :&nbsp;
+                {tree.family}
               </Typography>
-            </Box>
-            <Typography
-              variant="body2"
-              align="justify"
-              color="textSecondary"
-            >
-              {dummyTree.description}
-            </Typography>
+              <Typography
+                variant="body2"
+                align="justify"
+                color="textSecondary"
+                paragraph
+              >
+                <b>Cultivos y usos</b>
+                :&nbsp;
+                {tree.cultivationUses}
+              </Typography>
+              <Typography
+                variant="body2"
+                align="justify"
+                color="textSecondary"
+              >
+                <b>Distribución</b>
+                :&nbsp;
+                {tree.distribution}
+              </Typography>
+            </div>
+            )}
+            {(error || (!loading && !tree))
+            && (
+              <Box
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+                justifyContent="center"
+                height={1}
+              >
+                <SentimentVeryDissatisfiedIcon />
+                No se encontró ningun resultado.
+                <Box mt={1}>
+                  <Button
+                    aria-label="back"
+                    component={Link}
+                    to="/trees"
+                  >
+                    Regresar
+                  </Button>
+                </Box>
+              </Box>
+            )}
           </CardContent>
         </Box>
+        {tree
+        && (
         <CardMedia
           className={styles['cover-image']}
           component="img"
-          image={dummyTree.imgSrc}
-          title={`Picture of the ${dummyTree.name} tree`}
+          image={tree.imgSrc}
+          title={`Picture of the ${tree.name} tree`}
         />
+        )}
       </Card>
     </Box>
   );
 }
+
+TreeDetail.propTypes = {
+  match: ReactRouterPropTypes.match.isRequired,
+};
 
 export default TreeDetail;
