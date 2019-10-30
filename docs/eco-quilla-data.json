@@ -1,0 +1,175 @@
+{
+  "trees" : {
+    "cfcd208495d565ef66e7dff9f98764da": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/1.%20Roble%20Morado.jpeg?alt=media&token=4653209c-b299-457e-a090-d9d07707bc47",
+      "name": "Roble Morado",
+      "species": "Tabebuia rosea",
+      "family": "Bignoniaceae",
+      "distribution": "Desde México hasta el norte de Venezuela, Colombia y Ecuador.",
+      "description": "De 15 a 25 metros, puede crecer hasta 30 metros, con un diámetro de 1 metro. Hojas palmatifoliadas. Las flores tienen cáliz acampanado y bilabiado con pétalos rosa, lavanda o magenta. El fruto es una cápsula linear, cilíndrica de 22-35 cm de longitud con 7 a 10 semillas aladas.",
+      "cropAndUsages": "Se multiplica por semillas, y tiene un crecimiento mediano. Árbol que exige climas cálidos y bastante humedad en el suelo, así como suelos fértiles. Su madera es utilizada en diseño de interiores, la infusión de las hojas se utiliza como febrífugo. La corteza cocida sirve para la diabetes, paludismo, tifoidea, parasitosis."
+    },
+    "c4ca4238a0b923820dcc509a6f75849b": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/2.%20Ceiba%20Bonga.jpg?alt=media&token=84468614-44ee-43f5-8c3e-bbbd36fcfe6a",
+      "name": "Ceiba Bonga",
+      "species": "Ceiba pentandra",
+      "family": "Bombacaceae",
+      "distribution": "Aunque se cree que su origen es América Central, posee actualmente una amplia distribución por América tropical",
+      "description": "Uno de los más grandes en la América Tropical, tiene una altura de 20 a 40 metro y puede alcanzar hasta 70 metros, con un tronco grueso que puede llegar a medir más de 3 metros de diámetro. Hojas alternas, aglomeradas en las puntas de las ramas, palmado-compuestas, de 11 a 40 cm de largo, incluyendo el pecíolo. Da frutos desde los 5 a los 60 años y estos producen una fibra parecida al algodón llamada ‘seda vegetal’ o `cadarzo’. Cuando el árbol tiene de tres a cinco años produce este fruto con una cáscara frágil que contiene unas fibras ligeras y blandas.",
+      "cropAndUsages": "Las semillas se siembran en charolas o directamente en el suelo. Las plántulas son trasplantadas entre los 8 y 10 meses sembrándolas en cepas de 30 cm^3. Uso maderable con posibilidades comerciales. Uso medicinal para curar erupciones y picaduras de insectos, El kapok de sus frutos se emplea en la producción de fibras y como relleno de almohadas, colchones y salvavidas. El aceite de las semillas se utiliza como combustible de lámparas y en la fabricación de jabones."
+    },
+    "c81e728d9d4c2f636f067f89cc14862c": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/3.%20Floro%CC%81n.jpg?alt=media&token=820675f6-bc9a-4c14-8a86-0cf13cb49051",
+      "name": "Florón",
+      "species": "Plumeria rubra",
+      "family": "Apocynaceae",
+      "distribution": "Especie originaria de Mesoamérica; se extiende de México a Ecuador, Perú y Brasil.",
+      "description": "Altura de 5 a 8 metros, puede llegar hasta 25 metros y un diámetro de hasta 70 cm.  Contiene abundante líquido lechoso en la corteza. Las plantas cultivadas producen flores de color amarillo o gamas que van de rosado a púrpura con interesantes combinaciones.",
+      "cropAndUsages": "De fácil propagación durante la sequía. En los climas templados debe mantenerse en invernaderos. Aplicar riego ligero durante el invierno. Su flor se usa como aromatizantes, El látex se emplea en la fabricación de chicle, Las flores son comestibles y se suelen comer en América del Sur cocidas con azúcar. La infusión de su corteza se emplea para curar contusiones internas, mientras que su jugo se usa para curar heridas."
+    },
+    "eccbc87e4b5ce2fe28308fd9f2a7baf3": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/4.%20Teca.jpg?alt=media&token=72c6b857-658d-4fad-baa2-92e34cd4024a",
+      "name": "Teca",
+      "species": "Tectona grandis",
+      "family": "Verbenaceae",
+      "distribution": "Originario de la India, Birmania, Tailandia, Indonesia. Se han establecido también en África y América Central y del Sur.",
+      "description": "Árbol de 25 a 30m, puede alcanzar los 50 m de altura, con un diámetro mayor de 29 cm y hasta un metro. Las flores del Tectona grandis son bisexuales, de un lindo tono lila y crecen en racimos terminales, con un fruto redondeado que adentro tiene una semilla recubierta por una capa dura como un hueso.",
+      "cropAndUsages": "El tectona grandis debe sembrarse en suelos ricos en calcio, bien drenados, con humedad y planos, este árbol es ideal para climas tropicales, donde crece y se desarrolla de manera óptima. La madera de esta especie es muy apreciada en el mercado mundial, es empleada para la fabricación de muebles, ebanistería, puertas, paneles, construcción de casas, durmientes, cabinas de trabajo y carpintería en general."
+    },
+    "a87ff679a2f3e71d9181a67b7542122c": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/5.%20Olivo.jpg?alt=media&token=5b8f8825-681f-40f7-b340-d3aa51e11751",
+      "name": "Olivo",
+      "species": "Capparis odoratissima",
+      "family": "Capparidaceae",
+      "distribution": "Originario de la región norteña de Sudamérica, Centroamérica y México.",
+      "description": "Es un arbolito de entre 3-14 m de altura. Hojas simples, perennes, alternas, correosas, verde oscuras, elípticas, grandes, de 2-4 x 1-3 cm; Inflorescencia con flores perfectas, completas, solitarias, grandes, de 3-5 cm de largo.",
+      "cropAndUsages": "Abre sola a la madurez, 1 a 7 semillas, castañas, lisas; suelen germinar en la planta. De este arbusto se utiliza la raíz, la corteza y los capullos florales. Aunque no es una planta medicinal en sí misma, tiene algunas propiedades terapéuticas."
+    },
+    "e4da3b7fbbce2345d7772b0674a318d5": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/6.%20Eucalipto.jpg?alt=media&token=d170f404-dd79-4330-bcce-8e95639bfc8d",
+      "name": "Eucalipto",
+      "species": "Eucalyptus globulus",
+      "family": "Myrtaceae",
+      "distribution": "El Eucalyptus es originario de la región Sureste de Australia y Tasmania y actualmente se encuentra en diversos países, tanto de Europa, América del Sur, África y Asia.",
+      "description": "Aquellos que miden hasta 10 metros de altura son considerados pequeños, medianos si alcanzan de 10-30 metros, altos si miden entre 30 y 70 metros y muy altos si llegan a más de 70 metros de altura.  Asimismo, sus hojas son consideradas las más anchas del mundo. Sus flores tienden a ser aromáticas y se distinguen de las de otros árboles, porque sus pétalos se unen y forman una especie de capa cuando se expanden.",
+      "cropAndUsages": "El Eucalyptus Globulus se desarrolla en ambientes húmedos y frescos, los fríos excesivos no son buenos para su desarrollo. Sin embargo, pueden aguantar temperaturas elevadas comprendidas entre los -3°C a -5°C y es que dada su capacidad de absorción de agua es una especie en controversia, ya que es utilizado para sanear los pantanos de los mosquitos transmisores del paludismo y además se le considera una especie muy agresiva para otros ecosistemas por la desecación que ocasiona. La madera es usada para construcciones, E. globulus es la principal fuente de producción mundial de aceite de eucalipto y también para el té de hierbas."
+    },
+    "1679091c5a880faf6fb5e6087eb1b2dc": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/8.%20Mataraton.jpg?alt=media&token=4db9875c-18a2-4b30-b81f-865e9c78f08a",
+      "name": "Laurel",
+      "species": "Ficus benjamina",
+      "family": "Moraceae",
+      "distribution": "Originario de India, Indonesia y Australia. Árbol oficial de Bangkok, Tailandia. Algunos individuos han alcanzado grandes proporciones y podrían denominarse notables. Ampliamente distribuido en lugares tropicales, usado en los zócalos de los poblados y ciudades.",
+      "description": "Árbol de hasta 30 m de alto, por lo regular son más pequeños en las ciudades. De corteza gris claro lisa puede producir raíces aéreas colgantes. Ramas con látex blanco. Copa globosa y densa y follaje permanente. Hojas ovaladas de 10 cm, verde oscuro brillante en el haz, verde pálido en el envés. Flores diminutas de un solo sexo o bisexuales ocultas dentro de higos amarillo verdosos, pequeños, de hasta 1 cm de largo.",
+      "cropAndUsages": "Temperaturas de día más bien elevadas y moderadas por la noche son condiciones favorables para un gran crecimiento apreciable en poco tiempo. Crecimiento que contrasta notablemente con la vegetación ya existente. Es usado Como planta de interior en multitud de casas por su fácil cultivo y su pronta adaptación a los interiores, o en climas cálidos como planta de exterior aislada."
+    },
+    "8f14e45fceea167a5a36dedd4bea2543": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/8.%20Mataraton.jpg?alt=media&token=4db9875c-18a2-4b30-b81f-865e9c78f08a",
+      "name": "Matarratón",
+      "species": "Gliricidia sepium",
+      "family": "Fabaceae",
+      "distribution": "Se extiende naturalmente desde el sur de México, por toda América Central hasta Colombia, Venezuela y las Guayanas.",
+      "description": "Crece de 2 a 15 m, hasta 20 m de altura, con un diámetro a la altura del pecho entre 25 y 60 cm.  Las flores son rosadas y se agrupan en racimos densos de 10 a 20 cm de largo, situados en las axilas de las hojas caídas.",
+      "cropAndUsages": "Por semilla, se puede establecer directa o en vivero, a una profundidad de siembra de 2 cm. En vivero se deja crecer hasta 20 – 30 cm antes de trasplantar al campo.  Se utiliza por sus propiedades medicinales y repelente de insectos. En muchos países tropicales y subtropicales para diversos fines, tales como cercas vivas, forraje, sombra de cafetales, leña, ​ abono verde y veneno para ratas."
+    },
+    "c9f0f895fb98ab9159f51fd0297e236d": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/9.%20Mamo%CC%81n.jpg?alt=media&token=8858bf75-9616-4229-b164-1748eff51cd8",
+      "name": "Mamón",
+      "species": "Melicoccus bijugatus",
+      "family": "Sapindaceae",
+      "distribution": "Es nativo de Colombia, Venezuela, y la isla de Margarita, también la Guayana. Es común, tanto cultivado como espontáneo, en esos países, también en la costa de Ecuador, las tierras bajas de Centroamérica, las Antillas y en las Bahamas. Francesa, Guyana y Surinam.",
+      "description": "Alcanza los 30 m de altura a y 1.7 m de diámetro a la altura del pecho, con tronco recto y base ensanchada. Copa amplia, exuberante, verde brillante, ramas extendidas, los retoños de las ramas son de color rojizo.",
+      "cropAndUsages": "Requiere una estación seca marcada para florecer y producir de manera satisfactoria. Puede tolerar heladas. Crece en una amplia variedad de suelos, pero prefiere suelos profundos, fértiles, de origen calcáreo. El uso principal son sus frutos, que se consumen frescos o se hacen conservas y frutas enlatadas, principalmente en América Central y del Sur. También tiene usos en medicina tradicional. La bebida de la decocción de la hoja con sal se usa para desórdenes nerviosos y fiebres. Las gárgaras con el jugo de la hoja macerado se emplean para dolor e infecciones de garganta. Con la semilla tostada y molida se hace un jarabe o té que se toma para la diarrea."
+    },
+    "45c48cce2e2d7fbdea1afc51c7c6ad26": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/10.%20Gua%CC%81simo.jpg?alt=media&token=28f21eaa-8146-42be-b5aa-dd2e40d82960",
+      "name": "Guásimo",
+      "species": "Guazuma ulmifolia",
+      "family": "Sterculiaceae",
+      "distribution": "Originario de América tropical. Se extiende desde México hasta América del Sur (noreste de Argentina, Ecuador, Perú, Paraguay, Bolivia, Brasil) y en el Caribe.",
+      "description": "Crece de 2 a 15 m, hasta 25 m de altura, con un diámetro a la altura del pecho de 30 a 40 cm y hasta 80 cm. En algunos casos se desarrolla como arbusto muy ramificado.  El fruto es una cápsula subglobosa o elipsoidea, negro-purpúrea al madurar.",
+      "cropAndUsages": "La producción de plántulas en vivero es fácil, se siembran 2 a 4 semillas por bolsa. El tiempo para que éstas alcancen 25 a 30 cm de altura en bolsa es de 14 a 16 semanas; al alcanzar esta altura se recomienda trasplantarlas al inicio de las lluvias. Su madera su usa en artículos torneados y decorativos e instrumentos musicales, su fruto verde mucilaginoso es dulce y se come crudo, molido o seco. Hoy en día es usado para tratar y calmar la diarrea, problemas renales y los resfriados. Por otro lado, al preparar su corteza su puede tratar enfermedades venéreas como la sífilis y la gonorrea, también ataca la malaria, la calvicie, la elefantiasis (enfermedad poco común) y alivia las afecciones respiratorias como la gripe, la tos y el sarampión."
+    },
+    "d3d9446802a44259755d38e6d163e820": {
+      "imgSrc": "",
+      "name": "Uva de Playa",
+      "species": "Coccoloba uvifera",
+      "family": "Polygonaceae",
+      "distribution": "Originario de México e Isla Española(Ubicada entre Puerto Rico y Haití). Este árbol se distribuye desde lo bajo del estado de Florida, pasando por México, todo el litoral Atlántico, hasta las playas de Perú y México.",
+      "description": "Árbol con tamaños de entre 9 a 15 metros de altura y con aproximadamente 1 metro de diámetro, a la altura del pecho. Esta planta puede variar desde distribuirse por el espacio a su alrededor de forma horizontal, hasta crecer verticalmente alcanzando unos 15 metros. La corteza es fina, lisa y blanca, algunas con tronco amarronado. El fruto consta de un racimo de ‘uvas’ de color morado o verde. Esta fruta es carnosa con tonos amargos, cuenta con su respectiva semilla.",
+      "cropAndUsages": "Esta planta requiere muy poca presencia de mano humana para su crecimiento, ya que se encuentra ubicada en zonas cerca a playas, por ende cuenta con todas las herramientas para poder crecer sin problemas.\nUsos: Leña, Con el fruto se pueden crear bebidas alcohólicas, Con el líquido segregado por su corteza se pueden teñir telas para su respectiva comercialización, Desde el punto de vista medicinal, permite el manejo de la fiebre como también reducir los peligros de la diarrea."
+    },
+    "6512bd43d9caa6e02c990b0a82652dca": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/12.%20Mango.jpg?alt=media&token=3287666c-5569-4e4c-bbb4-f6df78495650",
+      "name": "Mango",
+      "species": "Mangifera indica",
+      "family": "Anacardiaceae",
+      "distribution": "Este árbol es originario de Asia Sur-Occidental, principalmente de las zonas ubicadas cerca de India e India incluida. Este árbol está distribuido a lo largo de todo el mundo, pero solo en zonas tropicales.",
+      "description": "Árbol de color verdoso amarronado, que puede tener una altura entre los 10 y 20 metros, pero dadas una buenas condiciones puede llegar a alcanzar unos 40 metros. Las flores son de color verde, en algunos casos pueden ser de color rosado. Las hojas son verdosas amarillentas y alargadas.",
+      "cropAndUsages": "Requiere de un clima suave( trópico), sin heladeras. El terreno debe ser profundo y fértil, pero no muy húmedo para que se pueda garantizar su completo desarrollo.\nUsos: Su fruto contiene altas cantidades de Vitamina A, Su fruto puede ser usado para la elaboración de dulces y bebidas, Su madera es dura pero no resistente, empleandose en ebanistería, artículos torneados, embalajes y carpintería."
+    },
+    "c20ad4d76fe97759aa27a0c99bff6710": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/13.%20Granadillo.jpg?alt=media&token=2a1a3236-5848-4ef0-aa7e-b286d8d11386",
+      "name": "Granadillo",
+      "species": "Caesalpinia punctata",
+      "family": "Caesalpiniaceae",
+      "distribution": "Especie nativa de Sudamérica. Ubicada principalmente entre Brasil, Colombia, Venezuela, Perú, Bolivia, Ecuador y Argentina. Una gran cantidad se encuentra localizada en Colombia, su gran mayoría en la costa Atlántica(Barranquilla, Cartagena).",
+      "description": "Este árbol cuenta con una altura de entre 2 a 3 metros, pero puede alcanzar una máxima de 10 metros. Este árbol es mejor conocido como un árbol arbusto, ya que cuenta con una altura baja, donde su principal característica es su frondosidad donde sus ramas, y hojas, pueden tocar el suelo. Las flores se presentan en racimos, normalmente de colores cálidos tales como amarillo, rojo o anaranjado. Su fruto es una clase de vaina rojiza de aproximadamente 10 cm de longitud.",
+      "cropAndUsages": "Este árbol necesita una exposición a pleno sol y temperaturas medias anuales entre 15-25 ºC. No resisten las heladas ni les van bien temperaturas inferiores a los 10ºC. Es una planta ideal para jardines de clima mediterráneo[3].Se multiplica por semillas frescas que no requieren tratamientos previos, no así las almacenadas del año anterior. Tolera la sequía, por lo que es apropiado para zonas áridas, y soporta bastante bien las podas.\nUsos: Sus frutos se utilizan para el teñido de pieles en las empresas textiles, ya que brinda un color rojizo, Se utiliza también en el ámbito medicinal, ya que puede ser usado para tratar enfermedades y/o heridas tales como: Caída del cabello, cicatrización, hemorroides, resfriado, desinflamación de amígdalas, entre otras."
+    },
+    "c51ce410c124a10e0db5e4b97fc2af39": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/14.%20Coco%20(2).jpg?alt=media&token=0f1dc0b1-6519-4e0b-9cc0-0b2501e88594",
+      "name": "Coco",
+      "species": "Cocos nucifera",
+      "family": "Sapindaceae",
+      "distribution": "El origen del cocotero es incierto, aun cuando se ha establecido en la región tropical indo-malaya del pacífico oriental. Esta afirmación se sustenta en el alto grado de diversidad genética en esta región asiática-pacífica. Sin embargo se puede establecer su distribución en las zonas tropicales de las costas Sudamericanas.",
+      "description": "Palmera de tallo firme y solitario, recto o ligeramente inclinado, de 10-20 m de altura y 40-50 cm de diámetro. El tronco posee anillos espaciados y fisuras verticales, siendo más grueso en la base y estrecho hacia la parte superior. Sus hojas tienen una longitud de 2 a 4 m, las cuales presentan ‘pétalos’ de 55-75 cm de largo de color verde amarillento. Su fruto es una nuez de gran tamaño, cubierta de una capa de fibras que guarda un centro carnoso y comestible, pero también guarda un centro lleno de líquido dulce y poco aceitoso.",
+      "cropAndUsages": "Requiere de una exposición solar completa por ende es necesario que se plantado en zonas libres, es decir, en zonas que no produzcan sombras. Al mismo tiempo necesita de temperaturas rodante de los 20° a los 30°. Esta planta puede ser alimentada con agua tanto salada como dulce, por ende es mejor su cultivo en zonas cercanas a las costas.\nUsos: Usualmente su tronco como sus hojas son usadas para la construcción de casas(chozas), La pulpa seca o copra contiene 60-70% de aceites (lípidos), 15-20% de carbohidratos y 5-6% de proteínas. El aceite de coco se utiliza para la elaboración de manteca de cacao, margarinas, jabones, lociones, cremas y diversos productos cosméticos, El agua del fruto es altamente nutritiva y refrescante, y contiene vitaminas y minerales, siendo consumida de forma directa como bebida, A partir de la extracción de la savia producida por su tallo, se puede elaborar una bebida alcohólica llamada ‘vino de coco’, Las fibras que rodean el coco son usadas como sustrato en jardinería, y para la fabricación de cuerdas, esteras, cepillos, cestas y alfombras. Así, el polvo resultante de la fibra de coco se utiliza como material aislante en contrachapado, como material de empaque o suplemento alimenticio para el ganado, La cáscara o concha del coco es materia prima para la elaboración de utensilios de cocina, como cucharas, cucharones, tazas, tazones, cajas o juguetes. Así mismo, la concha molida se emplea como aditivo en la elaboración de plásticos para proporcionar lustre y resistencia a la humedad."
+    },
+    "aab3238922bcc25a6f606eb525ffdc56": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/15.%20Tamarindo.jpg?alt=media&token=df36efb1-8fbd-481a-bea8-11c7a8631b7b",
+      "name": "Tamarindo",
+      "species": "Tamarindus indica",
+      "family": "Caesalpiniaceae",
+      "distribution": "Esta especie es nativa de India y África Tropical, llegando a todos trópicos del mundo. En Panamá se encuentra como planta cultivada en casi todo el país, principalmente en tierras bajas de clima seco. Florece y produce fruto de mayo a diciembre.",
+      "description": "Árbol verdoso con tronco grisáceo que cuenta con grietas en todo su tallo. Este árbol puede alcanzar una altura de hasta 10 metros, pero su tronco es relativamente corto, es decir que cuenta con gran frondosidad la cual también se de color verdoso amarillento. Sus flores retoñan en racimos de 6 a 10 flores. Sus flores son de color amarillo pálido con dos pétalos por cada uno. Su fruto es de color marrón, teniendo forma de vaina que cubre unas cuantas semillas que a su vez también son cubiertas por una piel carnosa y suave.",
+      "cropAndUsages": "Se multiplica por semillas. Necesita cultivarse en zonas de clima suave, siendo muy sensibles al frío las plantas jóvenes. Necesita una buena exposición solar. No es exigente en el tipo de suelos.\nUsos:Tiene utilidad como combustible y para ebanistería, Con sus frutos se preparan dulces y conservas, En medicina popular se utiliza la pulpa del fruto como laxante, De las hojas se puede obtener un tinte amarillo."
+    },
+    "9bf31c7ff062936a96d3c8bd1f8f2ff3": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/16.%20Caimito.jpg?alt=media&token=f42bd02b-6f07-4eca-a488-2ae8200787f2",
+      "name": "Caimito",
+      "species": "Chrysophyllum cainito",
+      "family": "",
+      "distribution": "Es originario de las área de baja elevación de América Central y del Caribe y se distribuye en el Caribe e introducido en regiones tropicales, pasando por Florida y Jamaica.",
+      "description": "Es un árbol de mediana altura, frondoso, de hojas muy verdes y brillantes por arriba y doradas por abajo, de donde le viene el nombre científico genérico, que significa hoja dorada. El fruto puede ser verdoso, purpúreo o azulado cuya parte comestible la constituye una pulpa blanca, dulce, jugosa y algo astringente( Cicatrizante ). Su fruto consta de 6 a 10 semillas marrón oscuro.",
+      "cropAndUsages": "Este árbol se reproduce por medio de las semillas proporcionadas por su fruto. No requiere un suelo en particular, crece bien en los terrenos ricos y profundos, marga arcillosa, arena o piedra caliza, pero es necesario un drenaje perfecto. Este árbol puede ser cultivado mediante injertos de su tronco en otros árboles.\nUsos: Con el Látex, proporcionado por los continuos cortes de su tallo, se puede realizar su manipulación y así obtener un adulterante para la gutapercha, En Jamaica, a menudo se come la masa con jugo de naranja agria, una combinación llamada ‘matrimonio’, o se mezcla con jugo de naranja, un poco de azúcar, nuez moscada rallada y una cucharada de jerez y se come como un postre llamado ‘strawberries and-cream’, Se come para calmar la inflamación en laringitis y neumonía. Se da como un tratamiento para la diabetes mellitus, y como una decocción para aliviar la angina de pecho, Los frutos estando ligeramente inmaduros se comen para superar trastornos intestinales. En exceso, causan estreñimiento."
+    },
+    "c74d97b01eae257e44aa9d5bade97baf": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/17.%20Palma%20real.jpg?alt=media&token=314b99ca-aed5-4b6d-a8fe-666b13859b60",
+      "name": "Palma Real",
+      "species": "Roystonea regia",
+      "family": "Arecaceae",
+      "distribution": "Es nativa de Cuba, algunas regiones de México, Belice, Honduras, sur de la Florida, Bahamas e Islas Caimán. Hoy está plantada en todos los países de la zona intertropical y en varias regiones se ha asilvestrado.",
+      "description": "Palmera de tronco único, grueso en su base, liso, de color grisáceo, alcanzando unos 12 a 16 m de altura y de 50 a 60 cm de diámetro. Cuenta con hojas pinnadas ( puntiagudas ), de 4 a 6 m de longitud. Cuenta con flores blancas, aromáticas. Frutos de hasta 1.2 cm de diámetro, rojizo-purpúreos.",
+      "cropAndUsages": "Se multiplica por semillas, que tardan unos dos meses en germinar. Requiere exposición soleada y riegos abundantes. Muy utilizada en alineaciones por su porte.\nUsos: Su raíz puede ser usada como <b>diurético</b>, También se puede usar para la expulsión de piedras de cálculos en los riñones, Para el tratamiento de la diabetes, Su fruto, palmiche, puede ser usado para la fabricación de jabones mediante la extracción del aceite producido por este, Su fruto también puede ser usado para la alimentación de cerdos."
+    },
+    "70efdf2ec9b086079795c442636b55fb": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/18.%20Roble.jpg?alt=media&token=85483922-18bd-4837-a8df-48270f719079",
+      "name": "Roble",
+      "species": "Quercus",
+      "family": "Fagacaeae",
+      "distribution": "Originario de Asia y se encuentra en su mayoría el hemisferio norte y en zonas húmedas del hemisferio sur.",
+      "description": "El tronco del roble común se presenta liso y con una tonalidad grisácea. Con los años comienza a agrietarse en su corteza, siendo estas grietas profundas. Los frutos del roble son conocidos como bellotas. Aparecen sujetas a largos pedúnculos. Las bellotas contienen en su interior las semillas de este árbol, una por cada bellota.",
+      "cropAndUsages": "El cultivo de este árbol utiliza una técnica que consiste en abrir la semilla con un pequeño corte usando una hoja de afeitar facilitando que la humedad entre a ella y aflorar más rápido ya que el crecimiento es lento; si el objetivo del cultivo es venta de madera se hacen intervenciones a lo largo de su crecimiento que son cortar sus ramas para procurar un crecimiento recto del tronco.\nUsos: Al poseer una madera firme se usa para la construcción de soporte para techos e inclusive para la fabricación de casas y carpintería, Su madera también se usa para la elaboración de barriles de vino, para su respectivo añejamiento."
+    },
+    "6f4922f45568161a8cdf4ad2299f6d23": {
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/eco-quilla.appspot.com/o/19.%20Almendro.jpg?alt=media&token=0b943f8b-5a84-4fd6-8d38-dd1c187f37b2",
+      "name": "Almendro",
+      "species": "terminalia catappa",
+      "family": "Combretaceae",
+      "distribution": "Nativo de China, Taiwán, Bangladesh, Camboya, India, Indonesia, Malasia, Nueva Guinea, Filipinas, Tailandia, Vietnam, norte de Australia, islas del Océano Índico y Madagascar e islas del Pacífico. Cultivado e introducido en todos los trópicos y subtrópicos.",
+      "description": "Árbol de hasta 24 m de altura, con un diámetro en el tronco de 1.5 m, por lo común mucho más pequeño, corteza rajada. Sus hojas son lisas, con forma de gota de agua, de color verde, pero justo antes de caer al suelo su color cambia a un rosado rojizo. Su flor es alargada, tal espiga, cuenta con gran cantidad de flores pequeñas que la conforman. Esta flor puede alcanzar una longitud de hasta 15 cm.",
+      "cropAndUsages": "Necesita para su cultivo de climas tropicales, subtropicales  suaves, aunque soporta bien los 7-8 °C,  exposiciones soleadas, aunque puede tolerar un mínimo de sombra, y suelos ácidos, que drenen bien, soportando algo de sal en los mismos. Resiste muy bien la proximidad del mar y los vientos, siendo por ello árbol adecuado para avenidas marítimas.\nUsos: Los frutos son comestibles, los cuales cuentan con propiedades astringentes y tónicas, Los frutos y la corteza se usan para reducir la fiebre, contra la diarrea y el Asma bronquial, Las semillas son muy oleosas y pueden servir para preparar una emulsión utilizada como bebida diaria, en las enfermedades de las vísceras pulmonares y abdominales."
+    }
+  }
+}
