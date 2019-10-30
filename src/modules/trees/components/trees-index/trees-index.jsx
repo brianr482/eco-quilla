@@ -14,7 +14,7 @@ import {
   CircularProgress,
   TablePagination,
 } from '@material-ui/core';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
+import { useList } from 'react-firebase-hooks/database';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import React from 'react';
@@ -26,12 +26,7 @@ import styles from './trees-index.module.scss';
 function TreesIndex({ history, location }) {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
-  const [trees, loading] = useCollectionData(
-    firebase.firestore().collection('trees'),
-    {
-      snapshotListenOptions: { includeMetadataChanges: true },
-    },
-  );
+  const [snapshots, loading, error] = useList(firebase.database().ref('trees'));
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -39,6 +34,8 @@ function TreesIndex({ history, location }) {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
+  console.log('SB', snapshots);
+  
   return (
     <Box className={styles.wrapper}>
       <Card className={styles.card}>
@@ -72,7 +69,7 @@ function TreesIndex({ history, location }) {
               <CircularProgress />
             </Box>
             )}
-            {trees
+            {!loading && !error && snapshots
             && (
             <div>
               <Table className={styles['main-table']}>
@@ -84,12 +81,12 @@ function TreesIndex({ history, location }) {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {trees.map((tree) => (
+                  {snapshots.map((snapshot) => (
                     <TableRow
-                      key={tree.name}
+                      key={snapshot.key}
                       onClick={
                         () => history.push(
-                          `${location.pathname}/${tree.publicCode}`,
+                          `${location.pathname}/${snapshot.key}`,
                         )
                       }
                       hover
@@ -98,10 +95,10 @@ function TreesIndex({ history, location }) {
                         component="th"
                         scope="row"
                       >
-                        {tree.name}
+                        {snapshot.val().name}
                       </TableCell>
-                      <TableCell>{tree.species}</TableCell>
-                      <TableCell>{tree.zone}</TableCell>
+                      <TableCell>{snapshot.val().species}</TableCell>
+                      <TableCell>{snapshot.val().zone}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -109,7 +106,7 @@ function TreesIndex({ history, location }) {
               <TablePagination
                 rowsPerPageOptions={[5, 10, 25]}
                 component="div"
-                count={trees.length}
+                count={snapshots.length}
                 rowsPerPage={rowsPerPage}
                 page={page}
                 backIconButtonProps={{
