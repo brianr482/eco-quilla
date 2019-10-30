@@ -61,7 +61,8 @@ function TreeDetail({ match }) {
               </Box>
               <Box mb={0.75}>
                 <Typography variant="subtitle2" color="textSecondary">
-                  {`${tree.species} |  ${tree.zone}`}
+                  {tree.species && tree.species}
+                  {tree.zone && ` | ${tree.zone}`}
                 </Typography>
               </Box>
               <Typography
@@ -74,6 +75,8 @@ function TreeDetail({ match }) {
                 :&nbsp;
                 {tree.description}
               </Typography>
+              {tree.family
+              && (
               <Typography
                 variant="body2"
                 align="justify"
@@ -84,16 +87,9 @@ function TreeDetail({ match }) {
                 :&nbsp;
                 {tree.family}
               </Typography>
-              <Typography
-                variant="body2"
-                align="justify"
-                color="textSecondary"
-                paragraph
-              >
-                <b>Cultivos y usos</b>
-                :&nbsp;
-                {tree.cropAndUsages}
-              </Typography>
+              )}
+              {tree.distribution
+              && (
               <Typography
                 variant="body2"
                 align="justify"
@@ -103,6 +99,21 @@ function TreeDetail({ match }) {
                 :&nbsp;
                 {tree.distribution}
               </Typography>
+              )}
+              {tree.cropAndUsages
+              && (
+              <Typography
+                variant="body2"
+                align="justify"
+                color="textSecondary"
+                paragraph
+                style={{ marginBottom: 0 }}
+              >
+                <b>Cultivos y usos</b>
+                :&nbsp;
+                {tree.cropAndUsages}
+              </Typography>
+              )}
             </div>
             )}
             {(error || (!loading && !tree))
