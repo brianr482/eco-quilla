@@ -15,7 +15,7 @@ function Trees({ match }) {
       <Switch>
         <Route exact path={`${match.url}`} component={TreesIndex} />
         <Route exact path={`${match.url}/search`} component={TreeQrReader} />
-        <Route exact path={`${match.url}/:publicCode`} component={TreeDetail} />
+        <Route exact path={`${match.url}/:id`} component={TreeDetail} />
       </Switch>
     </Box>
   );

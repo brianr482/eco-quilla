@@ -8,7 +8,7 @@ import {
   CircularProgress,
   Button,
 } from '@material-ui/core';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
+import { useObjectVal } from 'react-firebase-hooks/database';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactRouterPropTypes from 'react-router-prop-types';
@@ -19,14 +19,9 @@ import firebase from '../../../../firebase';
 import styles from './tree-detail.module.scss';
 
 function TreeDetail({ match }) {
-  const [treesList, loading, error] = useCollectionData(
-    firebase.firestore().collection('trees')
-      .where('publicCode', '==', match.params.publicCode).limit(1),
-    {
-      snapshotListenOptions: { includeMetadataChanges: true },
-    },
+  const [tree, loading, error] = useObjectVal(
+    firebase.database().ref(`trees/${match.params.id}`),
   );
-  const tree = (treesList && treesList[0]) || null;
   return (
     <Box className={styles.wrapper}>
       <Card className={styles.card}>
@@ -97,7 +92,7 @@ function TreeDetail({ match }) {
               >
                 <b>Cultivos y usos</b>
                 :&nbsp;
-                {tree.cultivationUses}
+                {tree.cropAndUsages}
               </Typography>
               <Typography
                 variant="body2"
