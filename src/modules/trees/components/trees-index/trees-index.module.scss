@@ -9,10 +9,16 @@
 
 .card {
   .main-table {
-    min-width: 450;
+    
     tr {
       cursor: pointer;
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    max-width: 360px;
   }
 }
 

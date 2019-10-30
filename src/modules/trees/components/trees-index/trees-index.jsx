@@ -26,7 +26,9 @@ import styles from './trees-index.module.scss';
 function TreesIndex({ history, location }) {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
-  const [snapshots, loading, error] = useList(firebase.database().ref('trees'));
+  const [snapshots, loading, error] = useList(
+    firebase.database().ref('trees'),
+  );
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -34,8 +36,7 @@ function TreesIndex({ history, location }) {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
-  console.log('SB', snapshots);
-  
+
   return (
     <Box className={styles.wrapper}>
       <Card className={styles.card}>
@@ -69,19 +70,22 @@ function TreesIndex({ history, location }) {
               <CircularProgress />
             </Box>
             )}
-            {!loading && !error && snapshots
-            && (
-            <div>
-              <Table className={styles['main-table']}>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Nombre</TableCell>
-                    <TableCell>Especie</TableCell>
-                    <TableCell>Ubicación</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {snapshots.map((snapshot) => (
+          </Box>
+          {!loading && !error && snapshots
+          && (
+          <div style={{ overflow: 'auto' }}>
+            <Table className={styles['main-table']}>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Nombre</TableCell>
+                  <TableCell>Especie</TableCell>
+                  <TableCell>Familia</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {snapshots
+                  .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                  .map((snapshot) => (
                     <TableRow
                       key={snapshot.key}
                       onClick={
@@ -98,29 +102,28 @@ function TreesIndex({ history, location }) {
                         {snapshot.val().name}
                       </TableCell>
                       <TableCell>{snapshot.val().species}</TableCell>
-                      <TableCell>{snapshot.val().zone}</TableCell>
+                      <TableCell>{snapshot.val().family}</TableCell>
                     </TableRow>
                   ))}
-                </TableBody>
-              </Table>
-              <TablePagination
-                rowsPerPageOptions={[5, 10, 25]}
-                component="div"
-                count={snapshots.length}
-                rowsPerPage={rowsPerPage}
-                page={page}
-                backIconButtonProps={{
-                  'aria-label': 'Página anterior',
-                }}
-                nextIconButtonProps={{
-                  'aria-label': 'Siguiente página',
-                }}
-                onChangePage={handleChangePage}
-                onChangeRowsPerPage={handleChangeRowsPerPage}
-              />
-            </div>
-            )}
-          </Box>
+              </TableBody>
+            </Table>
+            <TablePagination
+              rowsPerPageOptions={[5, 10, 25]}
+              component="div"
+              count={snapshots.length}
+              rowsPerPage={rowsPerPage}
+              page={page}
+              backIconButtonProps={{
+                'aria-label': 'Página anterior',
+              }}
+              nextIconButtonProps={{
+                'aria-label': 'Siguiente página',
+              }}
+              onChangePage={handleChangePage}
+              onChangeRowsPerPage={handleChangeRowsPerPage}
+            />
+          </div>
+          )}
         </CardContent>
       </Card>
       <Tooltip title="Escanear QR" aria-label="go to qr reader">
