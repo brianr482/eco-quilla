@@ -74,7 +74,7 @@ function TreesIndex({ history, location }) {
           {!loading && !error && snapshots
           && (
           <div style={{ overflow: 'auto' }}>
-            <Table className={styles['main-table']}>
+            <Table className={styles['main-table']} size="small">
               <TableHead>
                 <TableRow>
                   <TableCell>Nombre</TableCell>
