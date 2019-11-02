@@ -9,6 +9,7 @@ import {
   Button,
 } from '@material-ui/core';
 import { useObjectVal } from 'react-firebase-hooks/database';
+import ReactHtmlParser from 'react-html-parser';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactRouterPropTypes from 'react-router-prop-types';
@@ -25,7 +26,7 @@ function TreeDetail({ match }) {
   return (
     <Box className={styles.wrapper}>
       <Card className={styles.card}>
-        <Box display="flex" flexDirection="column">
+        <Box>
           <CardContent className={styles['card-content']}>
             {loading
             && (
@@ -73,7 +74,7 @@ function TreeDetail({ match }) {
               >
                 <b>Descripción</b>
                 :&nbsp;
-                {tree.description}
+                {ReactHtmlParser(tree.description)}
               </Typography>
               {tree.family
               && (
@@ -94,10 +95,11 @@ function TreeDetail({ match }) {
                 variant="body2"
                 align="justify"
                 color="textSecondary"
+                paragraph
               >
                 <b>Distribución</b>
                 :&nbsp;
-                {tree.distribution}
+                {ReactHtmlParser(tree.distribution)}
               </Typography>
               )}
               {tree.cropAndUsages
@@ -111,7 +113,7 @@ function TreeDetail({ match }) {
               >
                 <b>Cultivos y usos</b>
                 :&nbsp;
-                {tree.cropAndUsages}
+                {ReactHtmlParser(tree.cropAndUsages)}
               </Typography>
               )}
             </div>
@@ -140,7 +142,7 @@ function TreeDetail({ match }) {
             )}
           </CardContent>
         </Box>
-        {tree
+        {tree && tree.imgSrc
         && (
         <CardMedia
           className={styles['cover-image']}
