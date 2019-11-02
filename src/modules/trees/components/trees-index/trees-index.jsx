@@ -119,6 +119,7 @@ function TreesIndex({ history, location }) {
               nextIconButtonProps={{
                 'aria-label': 'Siguiente página',
               }}
+              labelRowsPerPage="Filas por página"
               onChangePage={handleChangePage}
               onChangeRowsPerPage={handleChangeRowsPerPage}
             />
