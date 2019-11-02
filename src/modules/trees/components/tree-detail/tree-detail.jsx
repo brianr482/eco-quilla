@@ -3,11 +3,11 @@ import {
   Card,
   Typography,
   CardContent,
-  CardMedia,
   IconButton,
   CircularProgress,
   Button,
 } from '@material-ui/core';
+import Img from 'react-image';
 import { useObjectVal } from 'react-firebase-hooks/database';
 import ReactHtmlParser from 'react-html-parser';
 import React from 'react';
@@ -144,11 +144,20 @@ function TreeDetail({ match }) {
         </Box>
         {tree && tree.imgSrc
         && (
-        <CardMedia
+        <Img
           className={styles['cover-image']}
-          component="img"
-          image={tree.imgSrc}
-          title={`Picture of the ${tree.name} tree`}
+          src={tree.imgSrc}
+          loader={(
+            <Box
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              height={1}
+              mr={2}
+            >
+              <CircularProgress />
+            </Box>
+            )}
         />
         )}
       </Card>
