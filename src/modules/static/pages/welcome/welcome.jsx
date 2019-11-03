@@ -7,14 +7,13 @@ import { Search as SearchIcon } from '@material-ui/icons';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './welcome.module.scss';
+import ecoQuillaLogo from '../../../../assets/eco-quilla-white-sh.svg';
 
 function Welcome() {
   return (
     <Box className={styles.wrapper}>
       <Box className={styles['home-section']}>
-        <Typography variant="h1">
-          Bienvenido a EcoQuilla
-        </Typography>
+        <img src={ecoQuillaLogo} alt="eco-quilla-logo" />
         <Fab
           variant="extended"
           aria-label="delete"
