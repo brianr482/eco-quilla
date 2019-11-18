@@ -144,21 +144,23 @@ function TreeDetail({ match }) {
         </Box>
         {tree && tree.imgSrc
         && (
-        <Img
-          className={styles['cover-image']}
-          src={tree.imgSrc}
-          loader={(
-            <Box
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              height={1}
-              mr={2}
-            >
-              <CircularProgress />
-            </Box>
-            )}
-        />
+        <div>
+          <Img
+            className={styles['cover-image']}
+            src={tree.imgSrc}
+            loader={(
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                height={1}
+                mr={2}
+              >
+                <CircularProgress />
+              </Box>
+              )}
+          />
+        </div>
         )}
       </Card>
     </Box>
