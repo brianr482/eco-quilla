@@ -1,4 +1,5 @@
 # Ecoquilla
+> Platform for looking up information about the Barranquilla trees via reading a QR code.
 
 ## Upload tree data to firebase
 docs/eco-quilla-data.json
